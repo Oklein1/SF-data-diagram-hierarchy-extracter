@@ -31,27 +31,33 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 --------------------------------
 
-## Running the Application:
+## Running the Application (locally):
 
-1.Create Virtual Environment (use <code>python</code> or <code>python3</code> ):
+1. Create Virtual Environment (use <code>python</code> or <code>python3</code> ):
 
     ```bash
     python -m venv venv
     ```
-    
+
 2. Activate the virtual environment:
 
     ```bash
     source venv/bin/activate
     ```
 
-3. Start the application:
+3. Install packages/dependencies:
+
+    ```bash
+    python -m pip install -r requirements.txt
+    ```
+
+4. Start the application:
 
     ```bash
     python app.py
     ```
 
-4. Open your web browser and navigate to the following URL:
+5. Open your web browser and navigate to the following URL:
 
     ```
     http://127.0.0.1:5000
