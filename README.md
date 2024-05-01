@@ -48,7 +48,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 3. Install packages/dependencies:
 
     ```bash
-    python -m pip install -r requirements.txt
+    python -m pip install -r dependencies.txt
     ```
 
 4. Start the application:
