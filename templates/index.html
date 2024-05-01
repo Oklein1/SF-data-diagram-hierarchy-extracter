@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSV File Upload</title>
+    <link rel="stylesheet" href="/staticFiles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>Upload CSV File</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".csv">
-        <button type="submit">Upload</button>
-    </form>
+    <div id="canvas">
+        <h1>Salesforce Hierarchy Extractor</h1>
+        
+        <br>
+        <br>
+
+        <h3>Goal of the Application:</h3>
+        <p>The tool is designed to simplify the
+            understanding of relationships
+            within a Salesforce organization's data model. Often, comprehending the intricate parent-child relationships
+            in
+            a Salesforce org can be challenging, especially when dealing with complex data structures.
+            This tool aims to alleviate this challenge by providing a straightforward method to extract and
+            visualize these relationships.
+        </p>
+
+        <br>
+        <br>
+
+        <h3>How does it work?</h3>
+        <p>The extractor takes as input a CSV file representing a Lucidchart diagram,
+            which is publicly available from <a style="color:#61C8D1" href="https://architect.salesforce.com/diagrams">Salesforce</a>.
+            <span style="color:orange">Lucidchart</span> is a widely used tool for creating diagrams, including entity relationship diagrams (ERDs)
+            representing Salesforce data models. The extractor then analyzes this diagram and produces a CSV file
+            outlining
+            the hierarchy of parent-child relationships within the Salesforce data model.</p>
+
+        <br>
+        <br>
+        <div id="formbox">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            
+                <input type="file" name="file" accept=".csv">
+                <button type="submit">Upload</button>
+        </form>
+    </div>
+    
+    <br>
+    <br>
+    <a href="">Tutorial Link</a>
+    
+    </div>
+
+
+
 </body>
+
 </html>

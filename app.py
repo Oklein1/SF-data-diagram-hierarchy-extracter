@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import io
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='./templates', static_folder="./staticFiles")
 
 @app.route('/')
 def index():
