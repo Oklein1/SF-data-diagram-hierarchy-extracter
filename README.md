@@ -38,6 +38,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
     ```bash
     python -m venv venv
     ```
+    
 2. Activate the virtual environment:
 
     ```bash
